@@ -1,0 +1,2 @@
+1.I started learning C++ today!
+2.I understood what is a friend function.
