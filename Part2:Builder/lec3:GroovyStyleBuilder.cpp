@@ -55,26 +55,29 @@ public:
 int main(){
     cout<<
         P{
-            H{"Hey world"},
-            H{"Machake"}
+            H{
+                P{
+                    H{"hello world"}
+                }
+            }
         }
     <<endl;
 
 
-    string temp = P{
-        H{"Hey world"},
-        H{"Machake"}
-    }.str();
-    cout<<temp<<endl;
+    // string temp = P{
+    //     H{"Hey world"},
+    //     H{"Machake"}
+    // }.str();
+    // cout<<temp<<endl;
 
-    temp = P{
-        H{"hello world"},
-        H{P{
-            H{"Bye"}
-        }
-        }
-    }.str();
-    cout<<temp<<endl;
+    // string temp = P{
+    //         H{
+    //             P{
+    //                 H{"hello world"}
+    //             }
+    //         }
+    //     }.str();
+    // cout<<temp<<endl;
 
     return 0;
 }

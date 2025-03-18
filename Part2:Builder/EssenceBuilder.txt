@@ -1,3 +1,7 @@
 Problem statment
 Suppose you want to desing a class having 100 parameters. But all the parameters are not intialized for all the objects. How to define constructors for these scenarios where we need to initilaize n out of the 100 parameters where n lies between 1 to 100. Well implementing it using constructor will take 2^100 constructors different constructors to be determined. Other method may be using default values. But let us suppose the any object may intialized only 5 params. In this case we are writing a long constructor taking 100 arguments unnecessarily. Hence this is where builder comes. Builder of a class is just another class which helps you to initilaize a class step by step. Note: It is a good idea that we don't expose builder class to the user but just give them a method create() which internally returns a builder class. Now different values can be set using set_field function and the sytax will be like: Myclass ele = Myclass::create().setName("name").setId("12123")....().build(); build will be another utility function of the builder class that returns the Main class
 
+A builder is a separate component for building an objec
+Can either give builder a constructor or return it via a static function
+To make builder fluent, return this
+Different facets of an object can be build with differetn builders working in tandem via a base class
