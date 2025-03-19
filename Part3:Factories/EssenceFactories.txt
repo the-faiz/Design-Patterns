@@ -10,3 +10,8 @@
 
 ===> A component responsible solely for the wholesale (not picewise) creation of objects is called a Factory
 
+
+A factory method is a static method that creates objects
+A factory can take care of object creation
+A fctory can be external or reside inside the objext as an inner class
+Hierarchies of factories can be used to create realted objects
