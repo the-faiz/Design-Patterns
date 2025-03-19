@@ -1,0 +1,19 @@
+1.Complicated objects are not desisned from scratch. They are reiterate existing designs
+2.An existing design is a Prototype
+3.We make a copy or clone of the prototype and customize it -> We need to make a deep copy
+4.We make the cloning effiecient using Factory
+
+=>A Prototype is a partially or fully initialized object that you copy(clone) and make use of
+
+Prototype design pattern is just about deep copying
+We can create deep copies using copy constructors
+
+=>to implement a prototype, partailly construct an object and store it somewhere
+=>Clone the prototype
+1. Implement your own deep copy functionality
+2. Serialize and deserailize
+=>Customize the resulting instance
+
+
+
+
