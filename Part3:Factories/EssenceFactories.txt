@@ -1,0 +1,12 @@
+1.Object creation logic becomes too convoluted
+2.Constructor is not descriptive
+>Name mandated by name of containing type
+>Cannot overload with same sets of args with different names
+>Can turn into optional parameter hell
+3.Object creation (non piecewise, unlike Builder) can be outsources to
+>A separate function (Factory Method)
+>That may exist in a separate class (Factory)
+>Can create heirarchy of factories with Abstract Factory
+
+===> A component responsible solely for the wholesale (not picewise) creation of objects is called a Factory
+
