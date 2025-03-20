@@ -56,5 +56,20 @@ int main(){
 
 
 
+//SHARED POINTER
+// 1.shared_ptr is a smart pointer which can share the ownership of object (managed object)
+// 2. Several shared_ptr can point ot the same object (managed object)
+// 3. It keep a reference count to maintain how many shared_ptr are pointing to the same object and once last shared_ptr goes out of scope then the managed object get deleted.
+// 4. The reference count forms the control block of the shared pointer.
+// 5. Control block is thread safe( even if you are using multithreading in whihc you use different shared_ptr to point to the same object and reference count will be intact).
+// 6. The main block is not thread safe and has to be handled explicitly by using mutexes.
+// 7. There are three ways shared_ptr will destroy managed object
+// a. If the last shared_ptr goes out of scope
+// b. If you initialize shared_ptr with some other shared_ptr
+// c. If you reset shared prevent
+// 8. Reference count does not increment when you use reference to a shared pointer passed to another shared pointer.
 
 
+//note: shared_ptr<class> sp1(obj1); shared_ptr<class> sp2;
+// sp2 = sp1; --> Allowed -> Reference count 
+//sp.use_count() --> to get the reference count

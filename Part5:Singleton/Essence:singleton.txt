@@ -1,0 +1,8 @@
+=>A singleton is a componenet which is instantiated only once
+=>Making a safe singleton is easy:
+a. Hide or delete the type's constructor, copy constructor and copy assignment operators
+b. Create a static method that returns a reference to a static memeber
+c. Guranteed to be thread safe since C++11
+=>Types with hard dependencies on singletons are difficult to test --> Cannot decouple the singleton and supply a fake obejct
+=>Instead of directly using a singleton, consider depending on an abstraction(e.g. interface)
+=>Consider defining singleton lifetime in DI (Dependency Injection) container

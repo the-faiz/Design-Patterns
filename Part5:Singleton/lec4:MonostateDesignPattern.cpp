@@ -1,0 +1,2 @@
+// It is of no use 
+//Approach -> Make every data member static inside a class to make it singleton -> Problems : Bad inheritance (static memebrs are not inherieted), user can create various instances (which should not be allowed for a singleton class)

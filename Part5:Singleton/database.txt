@@ -1,0 +1,12 @@
+Maths
+99
+Physics
+85
+Biology
+89
+Chemistry
+77
+English
+84
+Hindi
+49
