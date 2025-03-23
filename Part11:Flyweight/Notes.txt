@@ -1,0 +1,4 @@
+Flyweigth pattern is a space optimization technique that let us use less memory by storing externally the data associated with similar objects
+
+Store Commnon data externally, e.g. static map
+Define the idea of 'ranges' on homongeneous collections => Store data related to those ranges
