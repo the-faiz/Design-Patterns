@@ -1,0 +1,13 @@
+Command Design Patters: An onject which represents an instruction to perform a particular action. Contains all the information necessary for the action to be taken.
+
+
+Command vs Query:
+A comand = asking for an action or change (does not have a return value)
+A Query = asking for information (has a return value)
+CQS : Command Query Separation : having separate means of sending commands and queries
+
+
+Encapsulate all details of an operation in a separate object
+Define instruction for applying the command(either in the command itself, or eleswhere)
+Optionally define instruction for undoing the command
+Can create composite commands (aka macros)
