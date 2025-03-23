@@ -1,0 +1,12 @@
+Facilitate the traversal of different data structures
+Iteration (traversal) is the core functionality of various data structures
+An iterator is a class that facilitates the trasversal > Keeps a reference to the current element, and knows how to move to a different element
+Can be used implicitly > Range-based for and coroutines
+Iterator > Object that facilitates the traversal of a data structure
+
+An object can be iterated (traversed) if it defines a begin()/end() pair
+An iterator sepcified how you can traverse an object
+Typically requires of != and ++ operators
+++ is called sporadically, so cannot be recursive.
+Coroutines allow recursion througth generator yielding functions
+
