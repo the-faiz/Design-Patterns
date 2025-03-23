@@ -1,0 +1,19 @@
+We need to be informed when certain things happen
+>Object's field changes
+>Object does something
+>Some external event occurs
+
+We want to listen to events and notified when they occurs
+Terminology:
+>even and subscriber
+>signal and slot(boost, Qt,etc)
+slot mean the function that handles a signal
+
+An observer is an object that wishes to be informed about events happening in the system. The entity generating the events is an observable.
+
+Two components: obsever and observable
+observable provides a way of subscribing to an event (signal)
+Observer preforms the subscription
+Observable implementation is always intrusive (observer does not need to be)
+Multithreading/reentrant use can cause issues
+Ready-made implementation of Observers are available in boost library
